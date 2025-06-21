@@ -1,0 +1,167 @@
+/* Базовые стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaf8ee;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+/* Шапка сайта */
+.site-header {
+  background-color: #dff5e3;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f2fff5;
+  border-radius: 20px;
+}
+
+.main-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.main-menu a:hover {
+  background-color: #c3e6d2;
+}
+
+.auth-buttons button {
+  background-color: #fbc4d9;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-buttons button:hover {
+  background-color: #f99dbd;
+}
+
+.search-bar {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 60%;
+  max-width: 500px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Секция скидок */
+.weekly-discounts {
+  background-color: #e5e9ff;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.discount-card {
+  background-color: #ffeaf3;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Товары */
+.top-products .product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product-card {
+  width: 200px;
+  height: 200px;
+  background: repeating-linear-gradient(
+    45deg,
+    #ffedcc,
+    #ffedcc 10px,
+    #ffe3e3 10px,
+    #ffe3e3 20px
+  );
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Отзывы */
+.reviews .review-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 0 20px 20px;
+}
+
+.review {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Подвал */
+.site-footer {
+  background-color: #cfe3ff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-icons span {
+  font-size: 1.5em;
+  margin-left: 10px;
+  cursor: pointer;
+}
