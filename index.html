@@ -7,24 +7,62 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <!-- логотип, меню, поиск, вход -->
+  <header class="site-header">
+    <div class="logo">Логотип</div>
+    <nav class="main-menu">
+      <ul>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Заказ товара</a></li>
+        <li><a href="#">Телефон</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <button>Вход</button>
+      <button>Регистрация</button>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Поиск по названию товара">
+    </div>
   </header>
 
-  <section class="discounts">
-    <!-- Скидки недели -->
+  <section class="weekly-discounts">
+    <h2>Скидки недели</h2>
+    <div class="discount-card">
+      <p>Картинка и название товара</p>
+    </div>
   </section>
 
   <section class="top-products">
-    <!-- Топ-3 товара -->
+    <h2>Топ 3 товара для животных</h2>
+    <div class="product-list">
+      <div class="product-card">Картинка и название товара</div>
+      <div class="product-card">Картинка и название товара</div>
+      <div class="product-card">Картинка и название товара</div>
+    </div>
   </section>
 
   <section class="reviews">
-    <!-- Отзывы покупателей -->
+    <h2>Отзывы покупателей</h2>
+    <div class="review-list">
+      <div class="review">Фото и отзыв покупателя</div>
+      <div class="review">Фото и отзыв покупателя</div>
+    </div>
   </section>
 
-  <footer>
-    <!-- Контакты и иконки -->
+  <footer class="site-footer">
+    <div class="contacts">
+      <p>Контакты:</p>
+      <ul>
+        <li>Номер телефона</li>
+        <li>E-mail</li>
+        <li>Ссылки на соцсети</li>
+      </ul>
+    </div>
+    <div class="footer-icons">
+      <span>📨</span>
+      <span>✉️</span>
+      <span>📞</span>
+    </div>
   </footer>
 </body>
 </html>
