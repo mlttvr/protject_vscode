@@ -1,121 +1,90 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Магазин товаров для животных</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- Шапка -->
   <header>
-    <img src="images/logo.svg" alt="Логотип магазина" />
+    <img src="Logo.jpg" alt="Логотип" width="200">
     <nav>
-      <ul>
-        <li><a href="#">Каталог</a></li>
-        <li><a href="#">О нас</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
+      <a href="#catalog">Каталог</a>
+      <a href="#about">О нас</a>
+      <a href="#contacts">Контакты</a>
     </nav>
     <button>Вход</button>
   </header>
 
-  <!-- Основное содержимое -->
   <main>
-
-    <!-- Секция: Скидки недели -->
     <section>
       <h2>Скидки недели</h2>
-      <ul>
-        <li>
-          <img src="images/whiskas.png" alt="Корм для кошек" />
-          <h3>Корм «МяуМикс»</h3>
-          <p>Скидка -30%</p>
-          <a href="#">Подробнее</a>
-        </li>
-        <li>
-          <img src="images/food_dog.jpeg" alt="Корм для собак" />
-          <h3>Корм «ГавГав»</h3>
-          <p>Скидка -25%</p>
-          <a href="#">Подробнее</a>
-        </li>
-      </ul>
+      <article>
+        <img src="whiskas.jpg" alt="Корм МяуМикс" width="150">
+        <h3>Корм «МяуМикс»</h3>
+        <p>Скидка -30%</p>
+        <a href="#">Подробнее</a>
+      </article>
+      <article>
+        <img src="dogfood.jpg" alt="Корм ГавГав" width="150">
+        <h3>Корм «ГавГав»</h3>
+        <p>Скидка -25%</p>
+        <a href="#">Подробнее</a>
+      </article>
     </section>
 
-    <!-- Секция: Популярные товары -->
     <section>
-      <div>
-        <h2>Популярные товары</h2>
-        <a href="#">Все товары →</a>
-      </div>
-      <ul>
-        <li>
-          <img src="images/toy.jpg" alt="Игрушка для собак" />
-          <h3>Игрушка Bone</h3>
-          <p>Для собак, 15 см</p>
-          <p>Цена: 299 ₽</p>
-        </li>
-        <li>
-          <img src="images/bed.jpg" alt="Лежанка" />
-          <h3>Лежанка уютная</h3>
-          <p>Размер M</p>
-          <p>Цена: 950 ₽</p>
-        </li>
-        <li>
-          <img src="images/ball.jpg" alt="Мячик" />
-          <h3>Мячик с пищалкой</h3>
-          <p>Цветной</p>
-          <p>Цена: 120 ₽</p>
-        </li>
-      </ul>
+      <h2>Топ 3 товара для животных</h2>
+      <article>
+        <img src="" alt="Игрушка Bone" width="150">
+        <h3>Игрушка Bone</h3>
+        <p>Для собак, 15 см</p>
+        <p>Цена: 299 ₽</p>
+      </article>
+      <article>
+        <img src="" alt="Лежанка уютная" width="150">
+        <h3>Лежанка уютная</h3>
+        <p>Размер M</p>
+        <p>Цена: 950 ₽</p>
+      </article>
+      <article>
+        <img src="" alt="Мячик с пищалкой" width="150">
+        <h3>Мячик с пищалкой</h3>
+        <p>Цветной</p>
+        <p>Цена: 120 ₽</p>
+      </article>
     </section>
 
-    <!-- Секция: Отзывы -->
     <section>
       <h2>Отзывы покупателей</h2>
       <article>
-        <img src="images/user1.jpg" alt="Покупатель 1" />
         <p>Очень доволен качеством и быстрой доставкой!</p>
       </article>
       <article>
-        <img src="images/user2.jpg" alt="Покупатель 2" />
         <p>Мой кот оценил новый корм, будем брать ещё!</p>
       </article>
     </section>
 
-    <!-- Секция: Форма входа -->
     <section>
       <h2>Вход в личный кабинет</h2>
-      <form action="#" method="post">
+      <form>
         <label>Телефон:
-          <input type="tel" name="phone" placeholder="Введите номер телефона" required />
+          <input type="tel" name="phone" placeholder="Введите номер телефона">
         </label>
         <label>Пароль:
-          <input type="password" name="password" placeholder="Введите пароль" required />
+          <input type="password" name="password" placeholder="Введите пароль">
         </label>
         <button type="submit">Войти</button>
       </form>
     </section>
-
   </main>
 
-  <!-- Подвал -->
   <footer>
     <p>© 2025 Магазин товаров для животных</p>
-    <ul>
-      <li><a href="#">Политика конфиденциальности</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
-    <div>
-      <img src="images/mail.svg" alt="Почта" />
-      <img src="images/phone.svg" alt="Телефон" />
-      <img src="images/send.svg" alt="Отправить сообщение" />
-    </div>
+    <nav>
+      <a href="#policy">Политика конфиденциальности</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
   </footer>
-
 </body>
 </html>
